@@ -1,5 +1,5 @@
 import React from "react";
-import { camphor, camphorDesc, phoneVid } from "@/data/assets";
+import { camphor, camphorDesc, phoneVid, spIphone } from "@/data/assets";
 import { products } from "@/data/products";
 import ProductCard from "./ProductCard";
 import SponseredSection from "./SponseredSection";
@@ -44,7 +44,7 @@ const Phones = () => {
         </div>
 
         <div className="my-8 w-full">
-          <SponseredSection video={camphor} product={featuredProduct} />
+          <SponseredSection video={spIphone} product={featuredProduct} />
         </div>
       </div>
     </div>

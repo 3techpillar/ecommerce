@@ -23,12 +23,12 @@ const Hero = () => {
   useEffect(() => {
     const autScroll = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 2000);
     return () => clearInterval(autScroll);
   }, [currentIndex]);
 
   return (
-    <div className="h-[30vh] md:h-[80vh] w-full m-auto relative group">
+    <div className="h-[30vh] md:h-[70vh] w-full m-auto relative group">
       <Link href={"/products"}>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].image})` }}

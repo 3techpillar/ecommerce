@@ -15,15 +15,15 @@ const ganesh1 = "/images/ganesh1.jpg"
 const ganesh2 = "/images/ganesh2.jpg"
 const ganesh3 = "/images/ganesh3.jpg"
 
-const bag = "/images/bag.webp"
-const bag1 = "/images/bag1.webp"
-const bag2 = "/images/bag2.webp"
-const bag3 = "/images/bag3.webp"
+const bag = "/images/bag1.jpg"
+const bag1 = "/images/bag2.jpg"
+const bag2 = "/images/bag3.jpg"
+const bag3 = "/images/bag4.jpg"
 
-const bookself = "/images/bookself.webp"
-const bookself1 = "/images/bookself1.webp"
-const bookself2 = "/images/bookself2.webp"
-const bookself3 = "/images/bookself3.webp"
+const bookself = "/images/bookself1.jpg"
+const bookself1 = "/images/bookself2.jpg"
+const bookself2 = "/images/bookself3.jpg"
+const bookself3 = "/images/bookself4.jpg"
 
 const camera = "/images/camera.jpg"
 const camera1 = "/images/camera1.webp"
@@ -99,6 +99,12 @@ const oneplus2 = "/images/oneplus2.jpg"
 const oneplus3 = "/images/oneplus3.jpg"
 const oneplus4 = "/images/oneplus4.jpg"
 
+const google = "/images/search.png"
+const facebook = "/images/facebook.png"
+const twitter = "/images/twitter.png"
+
+const loginImg = "/images/login.png"
+
 const cloth = "/images/cloths.webp"
 const furniture = "/images/furniture.webp"
 const grocery = "/images/grocery.webp"
@@ -113,8 +119,11 @@ const video = "/videos/hero.mp4"
 const camphor = "/videos/camphor.mp4"
 const phoneVid = "/videos/phone-vid.mp4"
 const camphorDesc = "/images/camphor-desc.jpg"
+const spIphone = "/videos/sp-iphone.mp4"
 
-export {logo}
+const payment = "/images/payment.png"
+
+export {logo, payment, google, facebook, twitter, loginImg}
 
 export {slide1, slide2, slide3, slide4}
 
@@ -122,4 +131,4 @@ export { krishna, krishna1, krishna2, krishna3, ganesh, ganesh1, ganesh2, ganesh
 
 export {cloth, furniture, grocery, kitchen, mobile, top, travel, Beauty, electronics,}
 
-export {video, camphor, phoneVid, camphorDesc}
+export {video, camphor, phoneVid, camphorDesc, spIphone}

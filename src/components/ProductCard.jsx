@@ -57,7 +57,7 @@ export default function ProductCard({ product }) {
             </div>
             <button
               onClick={() => addToCart(items)}
-              class="hidden sm:block bg-blue-600 text-white text-sm font-semibold p-2 rounded-lg hover:bg-blue-700"
+              class="hidden sm:block bg-blue-600  text-white text-sm font-semibold p-2 rounded-lg hover:bg-blue-700"
             >
               <HiOutlineShoppingBag size={24} />
             </button>

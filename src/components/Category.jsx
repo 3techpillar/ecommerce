@@ -6,7 +6,9 @@ import Link from "next/link";
 const Category = () => {
   return (
     <div className="container mx-auto py-6">
-      <h2 className="text-2xl font-bold mb-4">Categories</h2>
+      <h1 className="lg:text-4xl md:text-3xl text-2xl lg:my-5 my-2 font-bold">
+        Categories
+      </h1>
       <div className="flex justify-evenly overflow-x-auto space-x-4 py-2">
         {categories.map((category) => (
           <Link key={category.id} href={"/products"}>
