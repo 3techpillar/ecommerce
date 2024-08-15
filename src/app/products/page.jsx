@@ -93,7 +93,7 @@ export default function ProductsPage() {
       </aside>
 
       {/* Main Content - Product Grid */}
-      <main className="w-full mt-8 sm:w-5/6">
+      <main className="w-full my-8 sm:w-5/6">
         <h1 className="text-2xl font-bold mb-4">All Products</h1>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product) => (
