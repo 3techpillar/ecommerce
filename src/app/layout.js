@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   "name": "Shopping Demo",
-  "description":"ecommerce demo, online store demo, shopping site show case, pwa POC, mcommerce sample site"
+  "description":"ecommerce demo, online store demo, shopping site show case, pwa POC, mcommerce sample site",
   "url": "https://www.3TechPillar.com",
   "logo": "https://www.3TechPillar.com/logo.png",
   "contactPoint": {
