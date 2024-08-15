@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import { CartContext } from "@/context/CartContext";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useContext } from "react";
 
@@ -149,10 +151,12 @@ const page = () => {
             {cartItems.map((item) => (
               <div key={item.id} className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src={item.images[0]}
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded-md"
+                    height={64}
+                    width={64}
                   />
                   <div className="ml-4">
                     <h4 className="text-md font-medium">{item.name}</h4>

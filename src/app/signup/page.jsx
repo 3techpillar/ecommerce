@@ -1,4 +1,5 @@
 import { facebook, google, loginImg, twitter } from "@/data/assets";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,10 +9,11 @@ const Page = () => {
       <div className="bg-white shadow-none sm:shadow-md rounded-lg flex flex-col md:flex-row w-full max-w-5xl">
         {/* Left Side - Welcome Message */}
         <div className="w-full md:w-1/2 bg-green-100 sm:flex flex-col justify-center items-center rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:rounded-bl-lg overflow-hidden hidden">
-          <img
+          <Image
             src={loginImg}
             alt="login-img"
             className="w-full h-full object-cover"
+            layout="fill"
           />
         </div>
 
@@ -77,13 +79,28 @@ const Page = () => {
           <div className="flex justify-center mt-4 space-x-4">
             {/* Icons for social login, replace src with actual icons */}
             <a href="#" className="text-gray-500">
-              <img src={google} alt="Google" className="w-8 h-8" />
+              <Image
+                layout="fill"
+                src={google}
+                alt="Google"
+                className="w-8 h-8"
+              />
             </a>
             <a href="#" className="text-gray-500">
-              <img src={facebook} alt="Facebook" className="w-8 h-8" />
+              <Image
+                layout="fill"
+                src={facebook}
+                alt="Facebook"
+                className="w-8 h-8"
+              />
             </a>
             <a href="#" className="text-gray-500">
-              <img src={twitter} alt="Twitter" className="w-8 h-8" />
+              <Image
+                layout="fill"
+                src={twitter}
+                alt="Twitter"
+                className="w-8 h-8"
+              />
             </a>
           </div>
         </div>
