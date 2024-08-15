@@ -7,10 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
   "name": "Shopping Demo",
-   "description":"ecommerce demo, online store demo, shopping site show case, pwa POC, mcommerce sample site"
+  "description":"ecommerce demo, online store demo, shopping site show case, pwa POC, mcommerce sample site"
   "url": "https://www.3TechPillar.com",
   "logo": "https://www.3TechPillar.com/logo.png",
   "contactPoint": {
