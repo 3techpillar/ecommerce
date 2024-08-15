@@ -2,24 +2,28 @@
 import React, { useContext, useState } from "react";
 
 import { IoBagHandleOutline, IoPersonCircleOutline } from "react-icons/io5";
-
+import { RiMenu2Fill } from "react-icons/ri";
+import { RxCross1 } from "react-icons/rx";
 import { BsPerson } from "react-icons/bs";
-import { FaSearch } from "react-icons/fa";
 import { CgLogOut } from "react-icons/cg";
 
 import Link from "next/link";
 import Logo from "./Logo";
 
 import { CartContext } from "@/context/CartContext";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const { cartItems } = useContext(CartContext);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (checkPathname) => pathname === checkPathname;
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   const handleLogout = () => {
-    // Handle logout functionality here
     console.log("Logout clicked");
     setDropdownOpen(false);
   };
@@ -27,10 +31,37 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white border-b border-gray-200 px-2 py-4 md:px-16 flex items-center justify-between gap-5">
-        <div className="flex items-center justify-center gap-20">
+        <div className="flex-1 sm:flex items-center justify-start gap-12 text-lg hidden">
+          <Link href={"/"}>
+            <p
+              className={`${
+                isActive("/") ? "font-bold border-b border-black" : "text-black"
+              }  pb-[1px]`}
+            >
+              Home
+            </p>
+          </Link>
+          <Link href={"/products"}>
+            <p
+              className={`${
+                isActive("/products")
+                  ? "font-bold border-b border-black"
+                  : "text-black"
+              }  pb-[1px]`}
+            >
+              Products
+            </p>
+          </Link>
+        </div>
+        <div className="flex-1 flex items-center sm:justify-center">
+          <RiMenu2Fill
+            size={30}
+            onClick={() => setIsMobile(true)}
+            className="block sm:hidden"
+          />
           <Logo />
         </div>
-        <form className="w-[75%] hidden sm:flex justify-center relative">
+        {/* <form className="w-[75%] hidden sm:flex justify-center relative">
           <div className="relative w-[70%]">
             <FaSearch
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -42,8 +73,8 @@ const Navbar = () => {
               className="border-[2px] border-gray-300 w-full font-semibold rounded-md py-3 px-3"
             />
           </div>
-        </form>
-        <div className="flex gap-3 sm:gap-6 items-center">
+        </form> */}
+        <div className="flex-1 flex gap-3 sm:gap-6 items-center justify-end">
           <div className="relative">
             <div
               className="cursor-pointer flex items-center"
@@ -60,7 +91,10 @@ const Navbar = () => {
                 </Link>
 
                 <Link href={"/login"}>
-                  <button className="w-full flex items-center gap-3 text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button
+                    onClick={handleLogout}
+                    className="w-full flex items-center gap-3 text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >
                     <CgLogOut size={24} /> Logout
                   </button>
                 </Link>
@@ -76,6 +110,41 @@ const Navbar = () => {
             </div>
           </Link>
         </div>
+        {isMobile && (
+          <div
+            className={`bg-white absolute inset-0 transform transition-transform duration-500 w-[80vw] h-screen top-0 -left-[80] z-20 ${
+              isMobile ? "translate-x-0 left-0" : "translate-x-full"
+            }`}
+          >
+            <div className="flex justify-between p-4 border-b border-gray-300">
+              <Logo />
+              <RxCross1 size={30} onClick={() => setIsMobile(false)} />
+            </div>
+            <div
+              className="pt-5 flex flex-col items-start gap-4 text-lg px-4"
+              onClick={() => setIsMobile(false)}
+            >
+              <Link href={"/"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  Home
+                </div>
+              </Link>
+              <Link href={"/products"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/products") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  Products
+                </div>
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
     </>
   );

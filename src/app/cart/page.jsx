@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "@/context/CartContext";
 import { RiDeleteBin6Fill } from "react-icons/ri";
+import Link from "next/link";
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
@@ -13,7 +14,7 @@ export default function CartPage() {
   );
 
   return (
-    <div className=" px-10 mt-5 mb-12">
+    <div className="px-2 sm:px-10 mt-5 mb-12">
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Left side - Cart Items */}
         <div className="w-full lg:w-2/3 pr-4">
@@ -34,7 +35,7 @@ export default function CartPage() {
                     <img
                       src={item.images[0]}
                       alt={item.name}
-                      className="w-[150px] h-[150px] object-cover rounded-lg"
+                      className="w-[100px] sm:w-[150px] h-[150px] object-cover rounded-lg"
                     />
                     <div>
                       <div>
@@ -51,7 +52,7 @@ export default function CartPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-center gap-5 ">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-5 ">
                     <div>
                       <label className="text-sm mr-2">Qty:</label>
                       <select
@@ -111,9 +112,11 @@ export default function CartPage() {
                 This order contains a gift
               </label>
             </div>
-            <button className="w-full bg-blue-500 text-white py-2 rounded-lg text-lg">
-              Proceed to Buy
-            </button>
+            <Link href={"/checkout"}>
+              <button className="w-full bg-blue-500 text-white py-2 rounded-lg text-lg">
+                Proceed to Buy
+              </button>
+            </Link>
           </div>
         </div>
       </div>

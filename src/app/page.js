@@ -12,7 +12,7 @@ export default function Home() {
   const featuredProducts = products.filter(product => product.featured);
 
   return (
-    <div className="">
+    <div className="relative">
       <div>
         <Hero />
       </div>

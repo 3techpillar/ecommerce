@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           {/* Our Company */}
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b-2 border-red-500 inline-block">
+            <h3 className="text-lg font-bold mb-4 border-b-2 border-blue-500 inline-block">
               Our Company
             </h3>
             <ul>
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b-2 border-red-500 inline-block">
+            <h3 className="text-lg font-bold mb-4 border-b-2 border-blue-500 inline-block">
               Services
             </h3>
             <ul>
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b-2 border-red-500 inline-block">
+            <h3 className="text-lg font-bold mb-4 border-b-2 border-blue-500 inline-block">
               Contact
             </h3>
             <ul>

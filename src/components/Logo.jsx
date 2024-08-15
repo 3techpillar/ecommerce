@@ -5,7 +5,11 @@ import React from "react";
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <img src={logo} alt="viera" className="w-[100px] sm:w-150" />
+      <img
+        src={logo}
+        alt="viera"
+        className="w-[80px] sm:w-[100px] mix-blend-multiply"
+      />
     </Link>
   );
 };

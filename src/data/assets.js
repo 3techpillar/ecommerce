@@ -122,8 +122,9 @@ const camphorDesc = "/images/camphor-desc.jpg"
 const spIphone = "/videos/sp-iphone.mp4"
 
 const payment = "/images/payment.png"
+const confirm = "/images/confirm.gif"
 
-export {logo, payment, google, facebook, twitter, loginImg}
+export {logo, payment, confirm, google, facebook, twitter, loginImg}
 
 export {slide1, slide2, slide3, slide4}
 

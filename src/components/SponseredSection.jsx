@@ -17,7 +17,7 @@ const SponseredSection = ({ video, image, product }) => {
         </video>
       </div>
 
-      <div className="w-full md:w-1/10 p-2 h-[40vh] md:h-[60vh] overflow-hidden">
+      <div className="w-full flex items-center justify-center md:w-1/10 p-2 h-[40vh] md:h-[60vh] overflow-hidden">
         <img
           src={product.images[0]}
           alt={product.name}
