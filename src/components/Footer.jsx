@@ -108,6 +108,10 @@ const Footer = () => {
               <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
                 <i className="fas fa-map-marker-alt"></i>
                 <a href="https://www.3TechPillar.com" target="_blank">3TechPillar.com</a>
+              </li>
+              <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
+                <i className="fas fa-map-marker-alt"></i>
+                <a href="https://www.3TechPillar.com" target="_blank">3TechPillar.com</a>
                 Gaur City Center, Greater Noida, 000021
               </li>
               <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
