@@ -11,7 +11,8 @@ const page = () => {
         src={confirm}
         alt="confirm-order"
         className=" mix-blend-multiply"
-        layout="fill"
+        width={250}
+        height={250}
       />
       <p className="text-lg">Your order is confirmed</p>
       <Link href={"/"}>

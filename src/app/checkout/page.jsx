@@ -155,7 +155,8 @@ const page = () => {
                     src={item.images[0]}
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded-md"
-                    layout="fill"
+                    height={64}
+                    width={64}
                   />
                   <div className="ml-4">
                     <h4 className="text-md font-medium">{item.name}</h4>

@@ -23,7 +23,8 @@ const SponseredSection = ({ video, image, product }) => {
           src={product.images[0]}
           alt={product.name}
           className=" h-full object-cover"
-          layout="fill"
+          width={400}
+          height={500}
         />
       </div>
 

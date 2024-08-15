@@ -10,7 +10,8 @@ const Logo = () => {
         src={logo}
         alt="viera"
         className="w-[80px] sm:w-[100px] mix-blend-multiply"
-        layout="fill"
+        width={100}
+        height={100}
       />
     </Link>
   );

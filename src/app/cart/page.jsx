@@ -37,7 +37,8 @@ export default function CartPage() {
                       src={item.images[0]}
                       alt={item.name}
                       className="w-[100px] sm:w-[150px] h-[150px] object-cover rounded-lg"
-                      layout="fill"
+                      width={100}
+                      height={100}
                     />
                     <div>
                       <div>

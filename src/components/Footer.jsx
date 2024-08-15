@@ -126,7 +126,13 @@ const Footer = () => {
         >
           {/* Payment methods */}
           <div className="flex space-x-4">
-            <Image layout="fill" src={payment} alt="payment" className="h-8" />
+            <Image
+              src={payment}
+              alt="payment"
+              className="h-8"
+              width={350}
+              height={32}
+            />
           </div>
           <p className="text-sm text-gray-400">
             Copyright © Veira All Rights Reserved.
