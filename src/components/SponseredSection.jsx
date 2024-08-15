@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 
@@ -18,10 +19,11 @@ const SponseredSection = ({ video, image, product }) => {
       </div>
 
       <div className="w-full flex items-center justify-center md:w-1/10 p-2 h-[40vh] md:h-[60vh] overflow-hidden">
-        <img
+        <Image
           src={product.images[0]}
           alt={product.name}
           className=" h-full object-cover"
+          layout="fill"
         />
       </div>
 

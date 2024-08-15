@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { CartContext } from "@/context/CartContext";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
@@ -32,10 +33,11 @@ export default function CartPage() {
                   className="w-full flex justify-between items-center rounded-md shadow-lg mb-4 p-4"
                 >
                   <div className="flex items-center space-x-4">
-                    <img
+                    <Image
                       src={item.images[0]}
                       alt={item.name}
                       className="w-[100px] sm:w-[150px] h-[150px] object-cover rounded-lg"
+                      layout="fill"
                     />
                     <div>
                       <div>

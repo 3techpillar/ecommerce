@@ -1,4 +1,5 @@
 import { payment } from "@/data/assets";
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -125,7 +126,7 @@ const Footer = () => {
         >
           {/* Payment methods */}
           <div className="flex space-x-4">
-            <img src={payment} alt="payment" className="h-8" />
+            <Image layout="fill" src={payment} alt="payment" className="h-8" />
           </div>
           <p className="text-sm text-gray-400">
             Copyright © Veira All Rights Reserved.

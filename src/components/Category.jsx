@@ -13,7 +13,12 @@ const Category = () => {
         {categories.map((category) => (
           <Link key={category.id} href={"/products"}>
             <div className="flex items-center justify-center flex-col w-[100px] h-[100px]">
-              <img src={category.image} alt={category.title} width={80} />
+              <Image
+                src={category.image}
+                alt={category.title}
+                width={80}
+                height={80}
+              />
 
               <h1>{category.title}</h1>
             </div>
