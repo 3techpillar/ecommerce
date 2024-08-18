@@ -12,7 +12,7 @@ const Spritual = () => {
   const featuredProduct = spiritualCategory[0];
 
   return (
-    <div>
+    <div id="spritiual">
       <div className="relative w-full h-[40vh] md:h-[70vh] overflow-hidden">
         <video
           className="w-full h-full object-cover object-bottom"
