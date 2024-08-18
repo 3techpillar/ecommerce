@@ -12,7 +12,7 @@ const Phones = () => {
   const featuredProduct = smartPhoneCategory[0];
 
   return (
-    <div>
+    <div id="smartphones">
       <div className="relative w-full h-[40vh] md:h-[70vh] overflow-hidden">
         <video
           className="w-full h-full object-cover object-bottom"

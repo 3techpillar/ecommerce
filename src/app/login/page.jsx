@@ -13,7 +13,8 @@ const Page = () => {
             src={loginImg}
             alt="login-img"
             className="w-full h-full object-cover"
-            layout="fill"
+            width={500}
+            height={800}
           />
         </div>
 
@@ -61,7 +62,8 @@ const Page = () => {
             {/* Icons for social login, replace src with actual icons */}
             <a href="#" className="text-gray-500">
               <Image
-                layout="fill"
+                width={32}
+                height={32}
                 src={google}
                 alt="Google"
                 className="w-8 h-8"
@@ -69,7 +71,8 @@ const Page = () => {
             </a>
             <a href="#" className="text-gray-500">
               <Image
-                layout="fill"
+                width={32}
+                height={32}
                 src={facebook}
                 alt="Facebook"
                 className="w-8 h-8"
@@ -77,7 +80,8 @@ const Page = () => {
             </a>
             <a href="#" className="text-gray-500">
               <Image
-                layout="fill"
+                width={32}
+                height={32}
                 src={twitter}
                 alt="Twitter"
                 className="w-8 h-8"

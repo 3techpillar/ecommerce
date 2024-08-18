@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className='max-w-7xl mx-auto px-3 sm:px-0'>
       <Category />
-        <div>
+        <div id='featured'>
           <h1 className="lg:text-4xl md:text-3xl text-2xl lg:my-5 my-2 font-bold">Featured Products</h1>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {featuredProducts.map(product => (
