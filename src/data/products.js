@@ -72,6 +72,7 @@ export const products = [
     images: [bag, bag1, bag2, bag3],
     rating: 5,
     featured: true,
+    arrival: false,
     originalPrice: 999.99 // Adjusted for a 10% discount
   },
   {
@@ -82,6 +83,7 @@ export const products = [
     category: "Furniture",
     images: [bookself, bookself1, bookself2, bookself3],
     featured: false,
+    arrival: true,
     rating: 3,
     originalPrice: 249.99 // Adjusted for a 40% discount
   },
@@ -93,6 +95,7 @@ export const products = [
     category: "Electronics",
     images: [camera, camera1, camera2, camera3],
     featured: false,
+    arrival: false,
     rating: 4,
     originalPrice: 999.99 // Adjusted for a 35% discount
   },
@@ -104,6 +107,7 @@ export const products = [
     category: "Toys",
     images: [car, car1, car2, car3],
     featured: false,
+    arrival: true,
     rating: 3,
     originalPrice: 349.99 // Adjusted for a 40% discount
   },
@@ -115,6 +119,7 @@ export const products = [
     category: "Furniture",
     images: [chair, chair1, chair2, chair3],
     featured: false,
+    arrival: false,
     rating: 2,
     originalPrice: 149.99 // Adjusted for a 40% discount
   },
@@ -126,6 +131,7 @@ export const products = [
     category: "Electronics",
     images: [controller, controller1, controller2, controller3],
     featured: false,
+    arrival: false,
     rating: 5,
     originalPrice: 119.99 // Adjusted for a 40% discount
   },
@@ -137,6 +143,7 @@ export const products = [
     category: "Decor",
     images: [ganesh, ganesh1, ganesh2, ganesh3],
     featured: false,
+    arrival: true,
     rating: 5,
     originalPrice: 69.99 // Adjusted for a 50% discount
   },
@@ -148,6 +155,7 @@ export const products = [
     category: "Decor",
     images: [krishna, krishna1, krishna2, krishna3],
     featured: true,
+    arrival: false,
     rating: 5,
     originalPrice: 59.99 // Adjusted for a 33% discount
   },
@@ -159,6 +167,7 @@ export const products = [
     category: "Electronics",
     images: [keyboard, keyboard1, keyboard2, keyboard3],
     featured: false,
+    arrival: true,
     rating: 4,
     originalPrice: 119.99 // Adjusted for a 33% discount
   },
@@ -170,6 +179,7 @@ export const products = [
     category: "Electronics",
     images: [laptop, laptop1, laptop2],
     featured: false,
+    arrival: false,
     rating: 4,
     originalPrice: 1799.99 // Adjusted for a 28% discount
   },
@@ -181,6 +191,7 @@ export const products = [
     category: "Electronics",
     images: [monitor, monitor1, monitor2, monitor3],
     featured: false,
+    arrival: false,
     rating: 3,
     originalPrice: 499.99 // Adjusted for a 30% discount
   },
@@ -192,6 +203,7 @@ export const products = [
     category: "Spiritual items",
     images: [incense, incense1, incense2, incense3],
     featured: false,
+    arrival: false,
     rating: 4,
     originalPrice: 9.99 // Adjusted for a 40% discount
   },
@@ -203,6 +215,7 @@ export const products = [
     category: "Spiritual items",
     images: [incense4,incense5, incense6, incense7],
     featured: false,
+    arrival: false,
     rating: 3,
     originalPrice: 8.99 // Adjusted for a 44% discount
   },
@@ -214,6 +227,7 @@ export const products = [
     category: "Spiritual items",
     images: [kapure,kapure1, kapure2, kapure3],
     featured: true,
+    arrival: false,
     rating: 5,
     originalPrice: 12.99
   },
@@ -225,6 +239,7 @@ export const products = [
     category: "Spiritual items",
     images: [kapure4, kapure5, kapure6, kapure7],
     featured: false,
+    arrival: false,
     rating: 3,
     originalPrice: 10.49
   },
@@ -236,6 +251,7 @@ export const products = [
     category: "smartphone",
     images: [iphone, iphone1, iphone2, iphone3],
     featured: false,
+    arrival: false,
     rating: 4,
     originalPrice: 1399.99 // Adjusted for a 7% discount
   },
@@ -247,6 +263,7 @@ export const products = [
     category: "smartphone",
     images: [s241, s242, s243, s244],
     featured: true,
+    arrival: false,
     rating: 5,
     originalPrice: 1199.99 // Adjusted for an 8% discount
   },
@@ -258,6 +275,7 @@ export const products = [
     category: "smartphone",
     images: [oneplus1, oneplus2, oneplus3, oneplus4],
     featured: false,
+    arrival: false,
     rating: 4,
     originalPrice: 999.99 // Adjusted for a 10% discount
   },
@@ -269,6 +287,7 @@ export const products = [
     category: "smartphone",
     images: [flip1, flip2, flip3, flip4],
     featured: false,
+    arrival: false,
     rating: 3,
     originalPrice: 1199.99 // Adjusted for a 17% discount
   }
