@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Category = () => {
   return (
-    <div className="container mx-auto py-6">
-      <h1 className="lg:text-4xl md:text-3xl text-2xl lg:my-5 my-2 font-bold">
+    <div className="container mx-auto py-3">
+      <h1 className="lg:text-4xl md:text-3xl text-2xl my-2 font-bold">
         Categories
       </h1>
       <div className="flex justify-evenly overflow-x-auto space-x-4 py-2">
@@ -16,8 +16,8 @@ const Category = () => {
               <Image
                 src={category.image}
                 alt={category.title}
-                width={80}
-                height={80}
+                width={50}
+                height={50}
               />
 
               <h1>{category.title}</h1>

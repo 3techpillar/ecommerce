@@ -30,7 +30,7 @@ export default function CartPage() {
               {cartItems.map((item) => (
                 <div
                   key={item.id}
-                  className="w-full flex justify-between items-center rounded-md shadow-lg mb-4 p-4"
+                  className="w-full flex justify-between items-start sm:items-center rounded-md shadow-lg mb-4 p-4"
                 >
                   <div className="flex items-center space-x-4">
                     <Image
@@ -111,9 +111,9 @@ export default function CartPage() {
                   </div>
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="block sm:hidden text-red-500 text-sm rounded-lg"
+                    className="block sm:hidden text-red-400 text-sm rounded-lg"
                   >
-                    <RiDeleteBin6Fill size={24} />
+                    <RiDeleteBin6Fill size={20} />
                   </button>
                 </div>
               ))}

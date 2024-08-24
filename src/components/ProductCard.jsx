@@ -47,9 +47,11 @@ export default function ProductCard({ product }) {
 
           <div class="mt-2 flex justify-between items-center">
             <div>
-              <p className="text-gray-500 text-sm">Price</p>
+              {/* <p className="text-gray-500 text-sm">Price</p> */}
               <div>
-                <span className="text-xl font-bold">${product.price}</span>
+                <span className="text-medium font-semibold">
+                  ${product.price}
+                </span>
                 <span className="text-sm line-through text-gray-500 ml-2">
                   ${product.originalPrice}
                 </span>

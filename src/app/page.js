@@ -10,6 +10,7 @@ import Recent from '@/components/Recent';
 
 export default function Home() {
   const featuredProducts = products.filter(product => product.featured);
+  const newArrival = products.filter(product => product.arrival)
 
   return (
     <div className="relative">
@@ -22,7 +23,7 @@ export default function Home() {
         <div id='featured'>
           <h1 className="lg:text-4xl md:text-3xl text-2xl lg:my-5 my-2 font-bold">New Arrival</h1>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {featuredProducts.map(product => (
+            {newArrival.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
