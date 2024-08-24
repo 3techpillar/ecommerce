@@ -116,28 +116,10 @@ const page = () => {
                   type="radio"
                   className="form-radio text-green-500"
                   name="paymentMethod"
-                  value="Online Payment"
-                />
-                <span className="ml-2">Online Payment</span>
-              </label>
-              <label className="inline-flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  className="form-radio text-green-500"
-                  name="paymentMethod"
                   value="Cash on Delivery"
                   checked
                 />
                 <span className="ml-2">Cash on Delivery</span>
-              </label>
-              <label className="inline-flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  className="form-radio text-green-500"
-                  name="paymentMethod"
-                  value="POS on Delivery"
-                />
-                <span className="ml-2">POS on Delivery</span>
               </label>
             </div>
           </div>
@@ -186,7 +168,7 @@ const page = () => {
           {/* Confirm Order */}
           <div className="mt-8">
             <Link href={"/confirm-order"}>
-              <button className="w-full bg-blue-600 text-white py-2 rounded-lg shadow-md hover:bg-blue-700">
+              <button className="w-full bg-black text-white py-2 rounded-lg shadow-md">
                 Confirm Order
               </button>
             </Link>

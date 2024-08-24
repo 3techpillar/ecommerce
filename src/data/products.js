@@ -6,18 +6,18 @@ import {cloth, furniture, grocery, kitchen, mobile, top, travel, Beauty, electro
 
 export const slides = [
   {
-    image: slide1
+    image: slide4
   },
   { image: slide2 },
   { image: slide3 },
-  { image: slide4 }
+  { image: slide1 }
 ];
 
 export const categories = [
   {
     id: 1,
     title: "Top",
-    image: top,  // Main image for the product
+    image: top, 
   },
   {
     id: 2,

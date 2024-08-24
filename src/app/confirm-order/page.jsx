@@ -16,7 +16,7 @@ const page = () => {
       />
       <p className="text-lg">Your order is confirmed</p>
       <Link href={"/"}>
-        <button className="bg-blue-600 px-4 py-2 rounded-xl text-white mt-4">
+        <button className="bg-black px-4 py-2 rounded-xl text-white mt-4">
           Continue shopping
         </button>
       </Link>

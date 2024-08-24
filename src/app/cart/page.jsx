@@ -52,11 +52,36 @@ export default function CartPage() {
                             : "Not eligible for FREE shipping"}
                         </p>
                       </div>
+                      <div className="block sm:hidden mt-2">
+                        <div className="">
+                          <label className="hidden sm:block text-sm mr-2">
+                            Qty:
+                          </label>
+                          <select
+                            value={item.quantity}
+                            onChange={(e) =>
+                              updateQuantity(item.id, parseInt(e.target.value))
+                            }
+                            className="border p-1 text-sm"
+                          >
+                            {[...Array(10).keys()].map((_, i) => (
+                              <option key={i + 1} value={i + 1}>
+                                {i + 1}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="mt-2">
+                          <p className="text-lg">
+                            ${(item.price * item.quantity).toFixed(2)}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-5 ">
-                    <div>
+                  <div className="hidden sm:flex flex-col sm:flex-row items-center justify-center gap-5 ">
+                    <div className="">
                       <label className="text-sm mr-2">Qty:</label>
                       <select
                         value={item.quantity}
@@ -84,6 +109,12 @@ export default function CartPage() {
                       <RiDeleteBin6Fill size={30} />
                     </button>
                   </div>
+                  <button
+                    onClick={() => removeFromCart(item.id)}
+                    className="block sm:hidden text-red-500 text-sm rounded-lg"
+                  >
+                    <RiDeleteBin6Fill size={24} />
+                  </button>
                 </div>
               ))}
             </div>
@@ -105,18 +136,14 @@ export default function CartPage() {
                 Choose FREE Delivery option at checkout.
               </p>
             </div>
-            <div className="mb-4 border-b pb-4">
-              <p className="text-lg font-semibold">
+            <div className="flex justify-between mb-4 border-b pb-4">
+              <p className="text-lg font-base">
                 Subtotal ({cartItems.length} items):
               </p>
-              <p className="text-xl font-bold">${totalPrice.toFixed(2)}</p>
-              <label className="flex items-center mt-2 text-sm">
-                <input type="checkbox" className="mr-2" />
-                This order contains a gift
-              </label>
+              <p className="font-semibold">${totalPrice.toFixed(2)}</p>
             </div>
             <Link href={"/checkout"}>
-              <button className="w-full bg-blue-500 text-white py-2 rounded-lg text-lg">
+              <button className="w-full bg-black text-white py-2 rounded-lg text-lg">
                 Proceed to Buy
               </button>
             </Link>
