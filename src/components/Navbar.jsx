@@ -142,6 +142,42 @@ const Navbar = () => {
                   Products
                 </div>
               </Link>
+              <Link href={"/#featured"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/#featured") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  Featured Products
+                </div>
+              </Link>
+              <Link href={"/about"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/about") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  About Us
+                </div>
+              </Link>
+              <Link href={"/privacy"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/privacy") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  Privacy Policy
+                </div>
+              </Link>
+              <Link href={"/term-condition"} className="w-full">
+                <div
+                  className={`px-2 py-1 rounded-xl ${
+                    isActive("/term-condition") ? "bg-blue-200" : "text-black"
+                  }  pb-[1px]`}
+                >
+                  Terms & Conditions
+                </div>
+              </Link>
             </div>
           </div>
         )}

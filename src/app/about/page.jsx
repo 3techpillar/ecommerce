@@ -77,7 +77,7 @@ const page = () => {
         {/* our process */}
         <div className="flex flex-col md:flex-row items-center my-12">
           <div className="md:w-1/2 md:pr-6 mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+            <h2 className="text-2xl font-bold mb-4">Our Process</h2>
             <p className="text-gray-700 mb-4">
               Our process is designed to be efficient, user-friendly, and
               secure. From the moment you land on our website, we strive to

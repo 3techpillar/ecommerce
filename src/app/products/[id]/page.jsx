@@ -6,12 +6,16 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { BiSolidOffer } from "react-icons/bi";
 import Link from "next/link";
+import ProductCard from "@/components/ProductCard";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 const ProductPage = ({ params }) => {
   const { addToCart } = useContext(CartContext);
   const product = products.find((p) => p.id === parseInt(params.id));
   const [selectedImage, setSelectedImage] = useState(product.images[0]);
   const [quantity, setQuantity] = useState(1);
+
+  const featuredProducts = products.filter((product) => product.featured);
 
   if (!product) {
     return <p>Product not found</p>;
@@ -83,19 +87,21 @@ const ProductPage = ({ params }) => {
             <StarRating rating={product.rating} />
           </div>
           <div className="">
-            <p className="text-gray-600 font-base text-xl">Price</p>
+            <p className="text-gray-600 font-base text-xl hidden sm:block">
+              Price
+            </p>
             <div className="flex items-baseline gap-2">
               <p className="text-xl sm:text-3xl font-bold text-red-600 mb-4">
                 ${product.price}
               </p>
               <p className="text-base sm:text-xl font-base line-through text-gray-400 mb-4">
-                ${product.price}
+                ${product.originalPrice}
               </p>
               <p>({discountPercentage}% off)</p>
             </div>
           </div>
           <p className="mb-4">{product.description}</p>
-          <div className="flex items-center justify-between mb-4 mt-6">
+          <div className="flex items-center justify-between mb-4 mt-6 px-5">
             <div className="flex gap-4 items-center">
               <button onClick={handleDecrement} className="text-4xl">
                 -
@@ -109,36 +115,22 @@ const ProductPage = ({ params }) => {
             </div>
             <button
               onClick={() => addToCart(product)}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded ml-4"
+              class="bg-black/80  text-white text-sm font-semibold p-2 rounded-lg hover:bg-black"
             >
-              Add to Cart
+              <HiOutlineShoppingBag size={30} />
             </button>
           </div>
-
-          <div className="border-t-2 border-gray-300 mt-6 pt-4">
-            <div className="flex gap-2 items-center">
-              <BiSolidOffer size={40} className="text-yellow-500" />
-              <h1 className="text-xl font-bold">Offers</h1>
-            </div>
-            <div className="flex text-gray-600 space-x-2 mt-2">
-              <div class="p-4 bg-white border rounded-md shadow-md">
-                <h3 class="text-base font-semibold">Bank Offer</h3>
-                <p class="text-sm">Up to 12% discount on select Credit Cards</p>
-                <Link href="#" class="text-blue-500 text-sm mt-2">
-                  4 offers ›
-                </Link>
-              </div>
-
-              <div class="p-4 bg-white border rounded-md shadow-md">
-                <h3 class="text-base font-semibold">No Cost EMI</h3>
-                <p class="text-sm">
-                  Up to 10% EMI interest savings on select Credit Cards
-                </p>
-                <Link href="#" class="text-blue-500 text-sm mt-2">
-                  1 offer ›
-                </Link>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div className="border-t-2 border-gray-300 mt-6 pt-4">
+        <div id="featured">
+          <h1 className="lg:text-4xl md:text-3xl text-2xl lg:my-5 my-2 font-bold">
+            Related Products
+          </h1>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </div>
       </div>

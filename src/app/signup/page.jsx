@@ -27,7 +27,7 @@ const Page = () => {
               <label className="block text-gray-700">Name</label>
               <input
                 type="text"
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 placeholder="Enter your name"
                 required
               />
@@ -36,7 +36,7 @@ const Page = () => {
               <label className="block text-gray-700">Email</label>
               <input
                 type="email"
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 placeholder="Enter your email"
                 required
               />
@@ -45,7 +45,7 @@ const Page = () => {
               <label className="block text-gray-700">Password</label>
               <input
                 type="password"
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 placeholder="Enter your password"
                 required
               />
@@ -54,7 +54,7 @@ const Page = () => {
               <label className="block text-gray-700">Confirm Password</label>
               <input
                 type="password"
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 placeholder="Confirm your password"
                 required
               />
@@ -62,7 +62,7 @@ const Page = () => {
             <Link href={"/"}>
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+                className="w-full bg-black text-white py-2 rounded-md transition duration-200"
               >
                 Sign Up
               </button>
