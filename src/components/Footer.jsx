@@ -42,18 +42,21 @@ const Footer = () => {
               Our Company
             </h3>
             <ul>
-              <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
-                Privacy Policy
-              </li>
-              <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
-                Legal Notice
-              </li>
-              <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
-                Terms And Conditions
-              </li>
-              <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
-                About Us
-              </li>
+              <Link href={"/privacy"}>
+                <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
+                  Privacy Policy
+                </li>
+              </Link>
+              <Link href={"term-condition"}>
+                <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
+                  Terms And Conditions
+                </li>
+              </Link>
+              <Link href={"/about"}>
+                <li className="mb-2 text-gray-400 hover:text-gray-200 cursor-pointer">
+                  About Us
+                </li>
+              </Link>
             </ul>
           </div>
           {/* Contact */}
